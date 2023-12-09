@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="quote">
+        <h3>Kupi <span class="dif">Time</span>  </h3>
+    </div>
+    <div class="quote">
+        <em>"A good cup of coffee is a well spent time"</em>
+    </div>
+    <div>
+        <a href="KUPI_MO.html" ><img id ="klogo" src="image/logo.png"></a>
+    </div>
+    <h1 id = "ftag">Feedback form</h1>
+    <form id="feedbackForm" action="index.php" method="post">
+        <div class="inputt">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required><br>
+        </div>
+        
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+               title="Enter a valid email address"><br>
+
+        <label for="rating">Rating:</label>
+        <!-- Use radio buttons for the rating, adjust the value attribute based on your needs -->
+        <div class="rating-container">
+            <input id="r1" type="radio" name="rating" value="1"> <label for="r1">1</label><br>
+            <input id="r2" type="radio" name="rating" value="2"> <label for="r2">2</label><br>
+            <input id="r3" type="radio" name="rating" value="3"> <label for="r3">3</label><br>
+            <input id="r4" type="radio" name="rating" value="4"> <label for="r4">4</label><br>
+            <input id="r5" type="radio" name="rating" value="5"> <label for="r5">5</label><br>
+        </div>
+        <br>
+        <button id ="submit" type="submit" onclick="submitFeedback()">Submit</button>
+    </form>
+    <a href="Kupi_Time.html"><img id="backlogo"src="image/back.png"></a>
+
+    <script>
+        function submitFeedback() {
+            // Add your AJAX code here to handle the form submission if needed
+
+            // Show pop-up message
+            alert("Your Feedback is Submitted Successfully");
+
+            // Redirect back to the feedback page after a delay (2 seconds in this example)
+            setTimeout(function() {
+                window.location.href = 'data.html'; // Replace with your actual feedback page URL
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

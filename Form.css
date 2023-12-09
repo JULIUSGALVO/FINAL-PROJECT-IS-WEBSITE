@@ -1,0 +1,140 @@
+body {
+    min-height: 87vh;
+    width: 100%;
+    background-image: url(image/blendbg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+h1 {
+    margin-top: 89px;
+    /* text-align: center; */
+    /* color: white; */
+    /* font-size: 50px; */
+    margin-left: 990px;
+    color: #3b1700;
+    font-family: Kantumruy;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+form {
+    max-width: 375px;
+    margin: 33px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(200px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    font-size: 20px;
+    margin-left: 900px;
+}
+
+label {
+    display: inline;
+    margin-bottom: 8px;
+    color: black;
+    position: relative;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+
+input, textarea {
+    width: 89%;
+    padding: 13px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-bottom: 3px solid black;
+    background: transparent;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #967969;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #C4A484;
+}
+
+#submit {
+    background-color: rgba(255, 255, 255, 1);
+    color: #3b1700;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    padding: 10px 123px;
+    margin-top: 20px;
+    position: relative;
+    left: 12%;
+    transition: background-color .5s;
+}
+
+
+#submit:hover {
+    background-color: black;
+    color: white; /* Change the color on hover to any desired color */
+}
+
+#backlogo{
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    width: 3.5vw;
+    height: 5.7vh;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 1);
+}
+
+.quote h3 {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    font-size: 132px;
+    font-family: 'Kantumruy';
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    white-space: nowrap;
+}
+.dif{
+    color: #3b1700;
+}
+.quote em {
+    color: white;
+    position: absolute;
+    top: 63%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    border-top: 0.5vw solid white;
+    font-family: 'Times New Roman', serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+    white-space: nowrap;
+}
+#klogo {
+    width: 13vw;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.rating-container{
+    margin-top: 28px;
+}
